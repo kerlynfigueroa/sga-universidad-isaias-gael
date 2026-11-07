@@ -10,6 +10,12 @@ La aplicación permite gestionar de manera integrada los procesos académicos de
 
 El proyecto fue diseñado utilizando principios de Arquitectura de Software y apoyado mediante herramientas de Inteligencia Artificial, particularmente Google AI Studio.
 
+## Aplicación en Producción
+
+El Sistema de Gestión Académica se encuentra desplegado y disponible en:
+
+https://sga-universidad-isaias-gael-l1ux.vercel.app/
+
 ---
 
 ## Objetivo General
