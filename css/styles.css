@@ -1,0 +1,267 @@
+/* ==========================================================
+   SISTEMA DE GESTIÓN ACADÉMICA (SGA)
+   Estilos Personalizados Profesionales complementarios a Bootstrap 5
+   ========================================================== */
+
+:root {
+  --sga-primary: #0f172a;       /* Slate 900 */
+  --sga-primary-hover: #1e293b; /* Slate 800 */
+  --sga-accent: #4f46e5;        /* Indigo 600 */
+  --sga-accent-hover: #4338ca;  /* Indigo 700 */
+  --sga-bg: #f8fafc;            /* Slate 50 */
+  --sga-surface: #ffffff;
+  --sga-border: #e2e8f0;        /* Slate 200 */
+  --sga-text-main: #0f172a;
+  --sga-text-muted: #64748b;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--sga-bg);
+  color: var(--sga-text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Sidebar & Navigation Styling */
+.sga-sidebar {
+  width: 260px;
+  background-color: var(--sga-primary);
+  color: #f1f5f9;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  z-index: 1030;
+}
+
+.sga-sidebar .nav-link {
+  color: #94a3b8;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.15s ease-in-out;
+  margin-bottom: 0.25rem;
+}
+
+.sga-sidebar .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.sga-sidebar .nav-link.active {
+  color: #ffffff;
+  background-color: var(--sga-accent);
+  font-weight: 600;
+}
+
+.sga-content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Header Navbar */
+.sga-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--sga-border);
+  height: 64px;
+}
+
+/* Custom Card & Metric Panels */
+.sga-card {
+  background-color: var(--sga-surface);
+  border: 1px solid var(--sga-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  transition: border-color 0.15s ease;
+}
+
+.sga-metric-card {
+  background-color: #ffffff;
+  border: 1px solid var(--sga-border);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sga-metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+}
+
+.sga-metric-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+/* Tables Customization */
+.sga-table {
+  font-size: 0.8125rem;
+  margin-bottom: 0;
+}
+
+.sga-table th {
+  font-weight: 600;
+  color: #475569;
+  background-color: #f8fafc;
+  border-bottom: 1px solid var(--sga-border);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+}
+
+.sga-table td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.sga-table tr:hover td {
+  background-color: #f8fafc;
+}
+
+/* Status Badges */
+.badge-activo {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  font-weight: 600;
+}
+
+.badge-riesgo {
+  background-color: #fff1f2;
+  color: #9f1239;
+  border: 1px solid #fecdd3;
+  font-weight: 600;
+}
+
+.badge-matriculado {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+  font-weight: 600;
+}
+
+.badge-cerrado {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-sga-primary {
+  background-color: var(--sga-primary);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease;
+}
+
+.btn-sga-primary:hover, .btn-sga-primary:focus {
+  background-color: var(--sga-primary-hover);
+  color: #ffffff;
+}
+
+.btn-sga-accent {
+  background-color: var(--sga-accent);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease;
+}
+
+.btn-sga-accent:hover, .btn-sga-accent:focus {
+  background-color: var(--sga-accent-hover);
+  color: #ffffff;
+}
+
+/* Academic Transcript Certificate Styling */
+.official-certificate {
+  background: #ffffff;
+  border: 2px solid #334155;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  position: relative;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.official-certificate-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.03;
+  pointer-events: none;
+  width: 320px;
+}
+
+/* Print Optimization */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .sga-sidebar,
+  .sga-navbar,
+  .no-print,
+  .btn,
+  .modal-backdrop {
+    display: none !important;
+  }
+  .sga-content-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .official-certificate {
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Helper Utilities for Teachers Module */
+.shadow-xs {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+}
+
+.bg-purple-subtle {
+  background-color: #f3e8ff !important;
+}
+
+.text-purple {
+  color: #7e22ce !important;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.x-small {
+  font-size: 0.75rem;
+}
+

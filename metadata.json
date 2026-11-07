@@ -1,0 +1,6 @@
+{
+  "name": "Universidad Isaías Gael - SGA",
+  "description": "Sistema de Gestión Académica (SGA) para la Universidad Isaías Gael: estudiantes, docentes, asignaturas, matrículas, calificaciones y reportes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
